@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'hello-spring-k8s/**'
   pull_request:
     branches:
       - main
@@ -27,6 +25,10 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+
+      - name: Make mvnw executable
+        working-directory: ./hello-spring-k8s
+        run: chmod +x ./mvnw
 
       - name: Build with Maven
         working-directory: ./hello-spring-k8s
