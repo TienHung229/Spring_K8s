@@ -27,7 +27,7 @@ public class HelloSpringK8sApplication {
 
 	@GetMapping("helloWorld")
 	public String helloWorld() {
-		return "Hello World!!";
+		return "Hello World, 10 midterm exam!";
 	}
 
 	@GetMapping("name")
