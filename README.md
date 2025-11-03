@@ -27,6 +27,10 @@
 
 <img width="1559" height="645" alt="image" src="https://github.com/user-attachments/assets/0d1d0901-7752-4103-a480-122a69b63998" />
 
+---
+<img width="1471" height="596" alt="image" src="https://github.com/user-attachments/assets/926303ca-8ded-4b23-9ce1-eee3ac477735" />
+
+
 ## 4. Tạo Alert (Alert Manager)
 
 <img width="1806" height="137" alt="image" src="https://github.com/user-attachments/assets/b521028b-b726-4bfb-be42-61dd31d7cc7c" />
