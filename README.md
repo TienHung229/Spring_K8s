@@ -2,10 +2,10 @@
 
 * [Thông tin sinh viên](#thong-tin-sinh-vien)
 * [Prometheus & Grafana](#prometheus--grafana)
-    * [1. Chạy ứng dụng trên K8s](#1-chay-ung-dung-tren-k8s)
-    * [2. Cài đặt Prometheus trên K8s, giám sát (node, pod, service)](#2-cai-dat-prometheus-tren-k8s-giam-sat-node-pod-service)
-    * [3. Trực quan thông tin K8s trên Grafana](#3-truc-quan-thong-tin-k8s-tren-grafana)
-    * [4. Tạo Alert (Alert Manager)](#4-tao-alert-alert-manager)
+    * [1. Chạy ứng dụng trên K8s](##1-chay-ung-dung-tren-k8s)
+    * [2. Cài đặt Prometheus trên K8s, giám sát (node, pod, service)](##2-cai-dat-prometheus-tren-k8s-giam-sat-node-pod-service)
+    * [3. Trực quan thông tin K8s trên Grafana](##3-truc-quan-thong-tin-k8s-tren-grafana)
+    * [4. Tạo Alert (Alert Manager)](##4-tao-alert-alert-manager)
 * [CI - Github Actions](#ci---github-actions)
 * [CD - ArgoCD](#cd---argocd)
 
