@@ -1,0 +1,28 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  name: jmeter-load-tester
+  namespace: spring-k8s
+spec:
+  containers:
+  - name: jmeter
+    image: justb4/jmeter:latest
+    command:
+    - /bin/sh
+    - -c
+    - "jmeter -n -t /jmeter/test.jmx -l /jmeter/results.jtl -j /jmeter/jmeter.log && sleep 600"
+    volumeMounts:
+    - name: jmeter-config
+      mountPath: /jmeter
+    resources:
+      requests:
+        cpu: 500m
+        memory: 512Mi
+      limits:
+        cpu: 1000m
+        memory: 1Gi
+  volumes:
+  - name: jmeter-config
+    configMap:
+      name: jmeter-test-script
+  restartPolicy: Never

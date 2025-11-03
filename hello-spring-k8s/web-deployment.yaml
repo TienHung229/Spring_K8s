@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
         - name: web
-          image: spring-k8s/hello-spring-k8s
-          imagePullPolicy: Never
+          image: spring-k8s-app:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           env:

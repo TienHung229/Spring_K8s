@@ -1,0 +1,20 @@
+﻿apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: pod-cpu-alert
+  namespace: kube-prometheus-stack
+  labels:
+    release: kube-prometheus-stack
+spec:
+  groups:
+  - name: pod.rules
+    interval: 30s
+    rules:
+    - alert: PodCpuUsageHigh
+      expr: rate(container_cpu_usage_seconds_total{pod="web-login-75c6b79b6c-rcztd",cpu="total"}[5m]) * 100 > 0.1
+      for: 30s
+      labels:
+        severity: warning
+      annotations:
+        summary: "Pod web-login CPU usage is above threshold"
+        description: "Pod web-login CPU usage is {{ $value | printf \"%.2f\" }}%"
